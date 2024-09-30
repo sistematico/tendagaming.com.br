@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Alhambra';
+  src: url('/fonts/alhambra/Alhambra.woff2') format('woff2'),
+      url('/fonts/alhambra/Alhambra.woff') format('woff'),
+      url('/fonts/alhambra/Alhambra.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito/Nunito-Regular.woff2') format('woff2'),
+      url('/fonts/nunito/Nunito-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Bold';
+  src: url('/fonts/nunito/Nunito-Bold.woff2') format('woff2'),
+      url('/fonts/nunito/Nunito-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins/Poppins-Regular.woff2') format('woff2'),
+      url('/fonts/poppins/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('/fonts/poppins/Poppins-Bold.woff2') format('woff2'),
+      url('/fonts/poppins/Poppins-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-family-base: "Nunito", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$font-family-alhambra: "Alhambra", $font-family-base;

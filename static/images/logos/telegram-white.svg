@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   data-name="Social Media Icons"
+   id="Social_Media_Icons"
+   viewBox="0 0 256 256"
+   version="1.1"
+   sodipodi:docname="telegram-white.svg"
+   width="256"
+   height="256"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.6640625"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-width="2514"
+     inkscape:window-height="1343"
+     inkscape:window-x="20"
+     inkscape:window-y="71"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Social_Media_Icons" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#009eeb;}</style>
+  </defs>
+  <path
+     class="cls-1"
+     d="M 238.51365,21.93499 6.6661491,111.65289 a 2.9300948,2.9300948 0 0 0 -0.400013,0.19 c -1.8800608,1.06504 -15.0004854,9.0903 3.5001133,16.28553 l 0.1900062,0.07 55.2067864,17.83558 a 3.0400983,3.0400983 0 0 0 2.545082,-0.31001 L 204.63755,60.291231 a 3.0000971,3.0000971 0 0 1 1.10004,-0.415014 c 1.90506,-0.31501 7.39024,-0.905029 3.92013,3.500114 -3.92513,5.000162 -97.45316,88.812869 -107.83349,98.108179 a 3.150102,3.150102 0 0 0 -1.03503,2.08506 l -4.530153,54.00175 a 3.5401146,3.5401146 0 0 0 1.415047,2.83509 3.4401113,3.4401113 0 0 0 4.085136,-0.31001 l 32.80106,-29.31595 a 3.0450985,3.0450985 0 0 1 3.81512,-0.19501 l 57.22685,41.55135 0.18501,0.12501 c 1.38505,0.85502 16.34552,9.5603 20.66566,-9.88032 L 255.95421,34.550398 c 0.055,-0.59502 0.59002,-7.135232 -4.08513,-11.000356 -4.91016,-4.04013 -11.86038,-2.000065 -12.90542,-1.780058 a 3.0000971,3.0000971 0 0 0 -0.45001,0.165006 z"
+     id="Telegram"
+     style="fill:#ffffff;stroke-width:0.500016" />
+</svg>

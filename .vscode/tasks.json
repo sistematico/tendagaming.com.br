@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "bun",
+			"script": "astro dev",
+			"problemMatcher": [],
+			"label": "bun: dev",
+			"detail": "bun run astro dev - package.json",
+			"runOptions": {
+				"runOn": "folderOpen"	
+			}
+		}
+	]
+}

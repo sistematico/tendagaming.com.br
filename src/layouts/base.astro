@@ -1,0 +1,51 @@
+---
+import '@/styles/main.scss';
+import Background from '@/components/background.astro';
+import { site } from '@/consts';
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title = site.title, description = site.description, mathjax = false, mermaid = false } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tenda Gaming Clan" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/images/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/images/favicon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+    <title>{title}</title>
+    <!-- <meta property="og:title" content={appName} />
+    <meta property="og:description" content={appDesc} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.origin} />
+    <meta property="og:image" content=`${Astro.url.origin}/images/ogp.png` /> -->
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL}/>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content={title}/>
+    <meta name="description" content={description}/>
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content={Astro.url}/>
+    <meta property="og:title" content={title}/>
+    <meta property="og:description" content={description}/>
+    <meta property="og:image" content={new URL(site.ogp, Astro.site?.href).href}/>
+    <meta property="og:image:alt" content={site.description}/>
+  
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content={Astro.url}/>
+    <meta property="twitter:title" content={title}/>
+    <meta property="twitter:description" content={description}/>
+    <meta property="twitter:image" content={new URL(site.ogp, Astro.site?.href).href}/>
+  </head>
+  <body>
+    <slot />
+    <Background />
+  </body>
+</html>

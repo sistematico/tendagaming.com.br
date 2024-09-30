@@ -1,0 +1,29 @@
+@import "fonts";
+@import "colors";
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  background-color: $bg;
+  color: $fg;
+  font-family: $font-family-base;
+}
+
+h1 {
+  font-family: $font-family-alhambra;
+}
+
+p.lead {
+  margin-bottom: 2rem;
+  // border: 1px solid rgba(var(--accent-light), 25%);
+  // background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+  background-color: $brown-light;
+  padding: 1.5rem;
+  border-radius: 8px;
+}

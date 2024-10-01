@@ -1,6 +1,13 @@
 @import "fonts";
 @import "colors";
 
+:root {
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(45deg,	rgb(var(--accent)),	rgb(var(--accent-light)) 30%,	white 60%);
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -13,6 +20,16 @@ body {
   background-color: $bg;
   color: $fg;
   font-family: $font-family-base;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  width: 800px;
+  max-width: calc(100% - 2rem);
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 h1 {

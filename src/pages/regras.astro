@@ -4,68 +4,44 @@ import Card from '@/components/card.astro';
 ---
 
 <Layout>
-	<main>
-		<div class="logo">
-			<img class="responsive" src="/images/logo.svg" alt="Tenda Gaming">
-		</div>
+  <main>
+    <div class="logo">
+      <img class="responsive" src="/images/logo.svg" alt="Tenda Gaming">
+    </div>
 
-		<p class="lead">
-			Seja bem vindo(a) ao <strong>Tenda Gaming</strong>.
-		</p>
+    <p class="lead">
+      Seja bem vindo(a) ao <strong>Tenda Gaming</strong>.
+    </p>
 
-		<ul role="list" class="link-card-grid">
-			<Card	href="https://dc.tendagaming.com.br" title="Discord"	body="Entre em nosso Discord">
-				<img src="/images/logos/discord-mark-white.svg" alt="Discord" style="height: 100%; max-height: 40px; width: auto;">
-			</Card>
-			<Card	href="https://wa.tendagaming.com.br" title="WhatsApp"	body="Nosso grupo do WhatsApp">
-				<img src="/images/logos/whatsapp-white.svg" alt="WhatsApp" style="height: 100%; max-height: 40px; width: auto;">
-			</Card>
-			<Card	href="https://tl.tendagaming.com.br" title="Telegram"	body="Nosso grupo no Telegram">
-				<img src="/images/logos/telegram-white.svg" alt="Telegram" style="height: 100%; max-height: 40px; width: auto;">
-			</Card>
-		</ul>
-	</main>
+    <ul role="list" class="link-card-grid">
+      <Card	href="https://dc.tendagaming.com.br" title="Discord" body="Entre em nosso Discord">
+        <img src="/images/logos/discord-mark-white.svg" alt="Discord" style="height: 100%; max-height: 40px; width: auto;">
+      </Card>
+      <Card	href="https://wa.tendagaming.com.br" title="WhatsApp"	body="Nosso grupo do WhatsApp">
+        <img src="/images/logos/whatsapp-white.svg" alt="WhatsApp" style="height: 100%; max-height: 40px; width: auto;">
+      </Card>
+      <Card	href="https://tl.tendagaming.com.br" title="Telegram"	body="Nosso grupo no Telegram">
+        <img src="/images/logos/telegram-white.svg" alt="Telegram" style="height: 100%; max-height: 40px; width: auto;">
+      </Card>
+    </ul>
+  </main>
 </Layout>
 
 <style>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(45deg,	rgb(var(--accent)),	rgb(var(--accent-light)) 30%,	white 60%);
-	}
+  .logo {
+    text-align: center;
+  }
 
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
+  .responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
 
-	.logo {
-		text-align: center;
-	}
-
-	.responsive {
-  	width: 100%;
-  	max-width: 400px;
-  	height: auto;
-	}
-
-	h1 {
-		font-size: 3.8rem;
-		font-weight: 700;
-		text-align: center;
-		margin: 0;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+  h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
 </style>

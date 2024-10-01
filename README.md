@@ -1,7 +1,7 @@
 # 🎪 Tenda Gaming
 
 <div align="center">
-  <img src="./static/img/ogp.png" alt="Tenda">
+  <img src="./public/img/ogp.png" alt="Tenda">
 </div>
 
 ![pages](https://gitlab.com/sistematico/tendagaming/badges/main/pipeline.svg?key_text=Gitlab+Pages&key_width=85)

@@ -16,28 +16,15 @@ const { title = site.title, description = site.description, mathjax = false, mer
     <link rel="icon" href="/images/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
     <link rel="icon" href="/images/favicon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
     <title>{title}</title>
-    <!-- <meta property="og:title" content={appName} />
-    <meta property="og:description" content={appDesc} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url.origin} />
-    <meta property="og:image" content=`${Astro.url.origin}/images/ogp.png` /> -->
-
-    <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL}/>
-
-    <!-- Primary Meta Tags -->
     <meta name="title" content={title}/>
     <meta name="description" content={description}/>
-  
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website"/>
     <meta property="og:url" content={Astro.url}/>
     <meta property="og:title" content={title}/>
     <meta property="og:description" content={description}/>
     <meta property="og:image" content={new URL(site.ogp, Astro.site?.href).href}/>
     <meta property="og:image:alt" content={site.description}/>
-  
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image"/>
     <meta property="twitter:url" content={Astro.url}/>
     <meta property="twitter:title" content={title}/>
@@ -49,3 +36,22 @@ const { title = site.title, description = site.description, mathjax = false, mer
     <Background />
   </body>
 </html>
+		
+<script is:inline>
+	if (localStorage.getItem('darkMode') === 'dark') {
+		document.querySelector('html').dataset.theme = 'dark'
+	}
+
+	if (localStorage.getItem('darkMode') === 'light') {
+		document.querySelector('html').dataset.theme = 'light'
+	}
+
+
+	if (!localStorage.getItem('darkMode')) {
+		let theme = window.matchMedia('(prefers-color-scheme: dark)')
+			? 'dark'
+			: 'light'
+
+		localStorage.setItem('darkMode', theme)
+	}
+</script>
